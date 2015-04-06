@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kauppa</title>
+		<meta charset="UTF-8">
+		<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	  	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	 	<script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+	 	<style>
+	 		hr {width:500px;margin-left:0;}
+	 		#boldIt {text-decoration:bold;}
+	 	</style>
+	</head>
+	
+	<body>
+		<div id="wrap">
+
+			<form action="">
+				<p><b>Hakutyyppi</b></p>
+				<input type="radio" name="item" value="consum"/>Tuote
+				<input type="radio" name="item" value="employee" />Työntekijä
+				<br/><br />
+				<input required="required" id="insertInput" type="text"  placeholder="Syötä kysely" autocomplete="off"/>
+				<button id="sendBrowserInputData" type="submit">Hae kysely</button>
+
+			</form>
+			
+			<div id="dataInput">
+			
+			</div>
+			<p id="dataTotal"></p>
+		</div>
+		<script src="functions.js"></script>
+	</body>
+</html>
