@@ -5,8 +5,6 @@ database and emit rows to client.
 
 How to
 
-1. Clone repository
+1. Clone repository: $ git clone https://github.com/TheFurrow/marketSQL.git
 
-$ git clone https://github.com/TheFurrow/marketSQL.git
-
-2. Work it baby
+2. Launch server: $ node server.js
